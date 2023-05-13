@@ -2,10 +2,22 @@ Package: TimeDependentCIndex
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: c(
+    person("Wang", "Jian",  role = "aut"),
+    person("Jiang", "Xinyang", email = "jiangjiang9102@outlook.com" , role="cre"),
+    person("Ning", "Jing",  role = "aut")
+    )
+Maintainer: Jiang X <jiangjiang9102@outlook.com>
+Description: This contains R-code and example data for the statistical method for evaluating a time-dependent C-index for recurent event data, described in: "Wang J, Jiang X, Ning J. Evaluating dynamic and predictive discrimination for recurrent event models: use of a time-dependent C-index. Biostatistics. Submitted." 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    dplyr,
+    ggplot2,
+    nloptr,
+    survival,
+    tidyr
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
