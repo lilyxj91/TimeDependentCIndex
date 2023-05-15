@@ -22,7 +22,6 @@ devtools::install_github("lilyxj91/TimeDependentCIndex",force = TRUE)
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(TimeDependentCIndex)
