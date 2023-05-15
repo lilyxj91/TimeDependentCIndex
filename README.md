@@ -54,7 +54,7 @@ validate.data = ValidateData
 results<-TimeDependentCIndex(train.data,validate.data,n.var,B)
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-example-1.png" width="100%" />
 
 ``` r
 alpha<-results[[1]] ## alpha estimation
