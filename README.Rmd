@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-This contains R-code and example data for the statistical method for evaluating a time-dependent C-index for recurent event data, described in:"Wang J, Jiang X, Ning J. Evaluating dynamic and predictive discrimination for recurrent event models: use of a time-dependent C-index. Biostatistics. Submitted." 
+This contains R-code and example data for the statistical method for evaluating a time-dependent C-index for recurent event data, described in:"Wang J, Jiang X, Ning J. Evaluating dynamic and predictive discrimination for recurrent event models: use of a time-dependent C-index. Under Revision." 
 
 ## Installation
 
@@ -37,14 +37,13 @@ library(TimeDependentCIndex)
 
 ### Define the parameters
 n.var<-3  ## number of predictors
-B<-200  ## number of perturbations
+B<-10  ## number of perturbations. B=10 for illustration purpose, in practice, we use N=200 in general.
 train.data = TrainData
 validate.data = ValidateData
 ```
 
 ```{r}
 ### Calculate alpha values and perturbation alpha values
-### May take hours to run depending on the pre-specified number of perturbations
 
 results<-TimeDependentCIndex(train.data,validate.data,n.var,B)
 alpha<-results[[1]] ## alpha estimation
