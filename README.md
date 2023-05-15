@@ -31,8 +31,12 @@ n.var<-3  ## number of predictors
 B<-200  ## number of perturbations
 train.data = TrainData
 validate.data = ValidateData
+```
 
+```r
 ### Calculate alpha values and perturbation alpha values
+### May take hours to run depending on the pre-specified number of perturbations'
+
 results<-TimeDependentCIndex(train.data,validate.data,n.var,B)
 ```
 
