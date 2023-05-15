@@ -8,7 +8,7 @@ This contains R-code and example data for the statistical method for
 evaluating a time-dependent C-index for recurent event data, described
 in:“Wang J, Jiang X, Ning J. Evaluating dynamic and predictive
 discrimination for recurrent event models: use of a time-dependent
-C-index. Biostatistics. Submitted.”
+C-index. Under Revision.”
 
 ## Installation
 
