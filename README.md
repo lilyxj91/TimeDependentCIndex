@@ -95,7 +95,7 @@ head(train.data)
 # Please arrange your data into this format with the same column names.  
 ```
 
-## Data Application
+## Real data application in re-hospitalization for colorectal cancer patients
 
 ```r
 rm(list = ls())
